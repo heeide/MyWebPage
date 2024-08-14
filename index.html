@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Side</title>
+    <style>
+        body {
+
+            background-color: aqua;
+
+
+        }
+
+        .header {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        .header2 {
+            font-family: sans-serif;
+            color: rgb(148, 17, 141);
+            margin-left: 45%;
+            margin-top: 10%;
+        }
+
+        .pDiv {
+            font-size: large;
+            font-family: sans-serif;
+            text-align: center;
+            ;
+
+
+        }
+
+        .ulDiv {
+            margin-left: 40%;
+            font-size: large;
+            font-family: sans-serif;
+        }
+
+        .image {
+            border: 10px solid black;
+            margin-left: 28%;
+        }
+
+        .button {
+            display: block;
+            margin-left: 45%;
+        }
+
+        .crimson {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+
+<body id=main>
+    <div>
+        <h1 class="header">Velkommen til min side!</h1>
+    </div>
+    <div>
+        <p class="pDiv">Dette er <i>min</i> side, det er mange lik den, men denne er min!
+
+        </p>
+        <p class="pDiv">
+            Mitt navn er Henrik, 34 år, fra Fredrikstad. Jeg er fersk til koding og det er skummelt og morro!
+            Mine hobbyer er:
+        </p>
+        <ul class="ulDiv">
+            <li>Gaming</li>
+            <li>Dungeons & Dragons</li>
+            <li>Gåturer</li>
+            <li>Film og serier</li>
+            <li>Bøker(stort sett lydbok)</li>
+        </ul>
+        <h2 class="header2">Dette er meg!</h2>
+        <img src="creepyselfie.jpg" class="image" />
+        <button onclick="change()" class="button"> Trykk for å endre mood!</button>
+    </div>
+    <script>
+
+        function change() {
+            document.getElementById('main').classList.toggle('crimson');
+        }
+
+    </script>
+</body>
+
+</html>
